@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+
+  <center><div class="form"><h1 align="center">Comments</h1></div>
+  <br>
+    <div>
+      <ul class="list-group list-group-flush" id="notes">
+        {% for note in user.notes %}
+        <li class="list-group-item">
+          {{ note.data }}
+          <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+ <div class="form">
+  <form method="POST">
+    <textarea name="note" id="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+      <button type="submit" class="btn btn-primary">Commenter !</button>
+    </div>
+  </form>
+ </div>
+</center>
+
+  <br>
+  <div class="foot_block">
+    <footer>
+        
+        <div class="news_letters">
+            <p><h3>Subscribe Newsletters</h3></p>
+            <p>Get our lastest news and ideas to your inbox !</p>
+            <form class="news_letters_form" method="" action="">
+                    <div class ="input">
+                        <label for="email_news">Subscribe Now</label>
+                        <input type="email" id="email_news" name="" placeholder="   Enter your address" size="30">
+                        <input type="submit" name="" value="Get started">
+                    </div>
+            </form>
+        </div>
+        
+      
+        <div class="info">
+            <table class="info_table">
+                <thead>
+                    <tr>
+                        <td><p><h4>Social Media</h4></p></td>
+                        <td><p><h4>Information</h4></p></td>
+                        <td><p><h4>Our patners</h4></p></td>
+                        <td><p><h4>Our services</h4></p></td>
+
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <p>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">intstagram</a></li>
+                                <li><a href="#">Discord</a></li>
+                            </ul>
+                        </p>
+                    </td>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet. Faucibus nisl tincidunt eget nullam</p>
+                    </td>
+                    <td>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat.</p>
+                    </td>
+                    <td>
+                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat.</p>
+                    </td>
+                </tr>
+            </table>
+                    
+        </div>
+
+        <div class="designed">
+            <p><h3>Designed by <h2>Lucid Design-@Meisekii__</h2></h3></p>
+        </div>  
+    
+
+    </footer>
+</div>
+
+
+  {% endblock %}

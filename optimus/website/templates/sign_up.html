@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+  content %}
+
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Document</title>
+    </head>
+    <body>
+    <center>
+    <form  method="POST">
+        <div class="form">
+            <h2>SIGN UP</h2>
+            <div class="input">
+                <div class="inputBox">
+                    <label for="email">Email Adress</label>
+                    <input type="text" name="email" id="email" value="" placeholder="Enter your email">
+                </div>
+                <div class="inputBox">
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                </div>
+                <div class="inputBox">
+                    <label id="password1">Password:</label>
+                    <input type="password" name="password1" id="password1" placeholder="Enter your password">
+                </div>
+                <div class="inputBox">
+                    <label id="password2">Confirm password</label>
+                    <input type="password" name="password2" id="password2" placeholder="Confirm the password">
+                </div>
+                <div class="inputBox">
+                  <input type="submit" name="" value="Sign up">
+                </div>
+                  <p class="account" >I already got an account ! <a href="/login" id="SignUp">Sign in</a></p>
+                </div>
+        </div>
+    </div>
+    </form>
+    </center>
+    </body>
+    </html>
+  {% endblock %}

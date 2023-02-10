@@ -1,0 +1,210 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+
+  justify-content: center;
+  align-items: center;
+  background: #196031;
+  background-color: #326859;
+  min-height: 100vh;
+}
+
+.form h2{
+  color: #356fb1;
+  font-family: 'Dancing Script', cursive;
+
+}
+.form h2:hover{
+  color: #762604;
+  font-size: 30px;
+}
+
+.account{
+  margin-top: 30px;
+  color: #555;
+  text-align: center;
+
+}
+.account a{
+  color: #990630;
+
+}
+.account a:hover{
+  font-size: 18px;
+  color: #356fb1;
+}
+.form{
+  position: relative;
+  width: 350px;
+  margin-top: 100px;
+  padding: 40px 40px 40px;
+  background: #c7c7c7;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px #990630,
+              5px 5px 10px #064b99;
+}
+
+.form:hover{
+  position: relative;
+  width: 350px;
+  padding: 40px 40px 40px;
+  background: #c7c7c7;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: -5px -5px 10px #064b99,
+              5px 5px 10px  #990630;
+}
+.form .input{
+  text-align: left;
+  margin-top: 40px;
+
+}
+.form .input .inputBox label{
+  display: block;
+  color: #040d4c;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.form .input .inputBox input{
+  width: 100%;
+  height: 50px;
+  background-color: #470f0f;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 15px;
+  color: #03a9f4;
+  box-shadow: inset -1px -1px 8px #f43303,
+              inset 1px 1px 8px #28820b;
+}
+
+.form .input .inputBox input[type="submit"]{
+  margin-top: 20px;
+  box-shadow: -2px -2px 6px rgba(59, 203, 6, 0.1),
+              2px 2px 6px rgba(10, 86, 107, 0.8);
+}
+.form .input .inputBox input[type="submit"]:hover{
+  margin-top: 20px;
+  box-shadow: -2px -2px 6px rgba(59, 203, 6, 0.1),
+              2px 2px 6px rgba(10, 86, 107, 0.8);
+              color: #3f9283;
+}
+.form .input .inputBox input[type="submit"]:active{
+  background-color: #20e9b4;
+color: #9c0000;
+margin-top: 20px;
+box-shadow: inset -2px -2px 6px rgba(11, 84, 26, 0.1),
+      inset 2px 2px 6px rgba(84, 76, 178, 0.8);
+}
+.form .input .inputBox ::placeholder{
+  color: #555;
+  font-size: 15px;
+}
+
+footer{
+ 
+  position: inline-block;
+  background-color: rgb(205, 202, 157);
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+}
+
+footer h4{
+  color: #5f0821;
+  font-size: 20px;
+}
+
+.news_letters{
+  margin: 15px;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+.news_letters h3{
+  color: #0a7ecb;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.news_letters h3:hover{
+  color: #2f6862;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.news_letters p{
+  padding-bottom: 10px;
+}
+.news_letters label{
+  font-size: 25px;
+  color: #470f0f;
+}
+.news_letters input{
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.news_letters input:hover{
+  height: 35px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #aedbcf;
+}
+.news_letters input[type="submit"]{
+  width: 80px;
+  background-color: #185640;
+  color: #c7c7c7;
+  margin-top: 20px;
+  box-shadow: inset -2px -2px 6px rgba(19, 175, 180, 0.1),
+              inset 2px 2px 6px rgba(221, 213, 212, 0.8);
+
+}
+.news_letters input[type="submit"]:active{
+  background-color: #067054;
+  color: #9c0000;
+  margin-top: 20px;
+  box-shadow: inset -2px -2px 6px rgba(11, 84, 26, 0.1),
+      inset 2px 2px 6px rgba(84, 76, 178, 0.8);
+}
+
+.designed{
+  padding-bottom: 10px;
+  background: linear-gradient(#4a0d0d, #0a1517);
+  border-radius: 10px;
+}
+
+.designed p{
+  padding: 10px;
+}
+.designed h2{
+  color: rgb(255, 255, 255);
+}
+.info table{
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: #6a0404;
+  color: #06211a;
+  background-image: url(static/img/9.jpg);
+}
+h1{
+  color: rgb(9, 12, 88);
+}
+.foot_block{
+  align-items: center;
+  position: relative;
+  display: inline-block;
+}
